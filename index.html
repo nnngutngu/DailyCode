@@ -1,12 +1,574 @@
-The Rainbow 
+<!DOCTYPE html>
+<html lang="en">
 
-purple
-pink
-orange
-blue
-red
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.js">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
 
-these are the colors of the rainbow
+<body>
+  
+<!--  These are my First javascript lines that I wrote in my life and these lines i have learned from freecodecamp youtube channel   -->
+  
+  <script>
+  //  Understood
+    console.log("Hello from JavaScript");
+    console.log("Hello world I am Adel");
+    //var number=5;
+    /* This is a multiline comment*/
+//  Understood
+    /*Data Types:
+    unidifined , null , boolean, string, symbol, number, and object
+    */
+    //Variables
+    var myName = "Adel"
+    myName = 8
+    let ourName = "freecodecamp"
+    const pi = 3.14
+
+    //Storing Value with Assignment Operator
+    var a;
+    var b = 2;
+    console.log(a);
+    a = 7;
+    b = a;
+    console.log(a);
+    //Initializing Variables with Assignment Operator
+    var a = 9;
+    //Initialize these three variables
+    var a = 5;
+    var b = 10;
+    var c = "I am a";
+    //Do not change code below this line
+
+    a = a + 1;
+    b = b + 5;
+    c = c = "string";
+    /*
+    //Case Sensability in Variables
+    var studlyCapVar;
+    var properCamelCase;
+    var titleCaseOver;
+
+    //Assignments
+    studlyCapVaR = 10;
+    properCamelCase = "A String";
+    titleCaseOver = 9000;
+    //Adding Numbers
+    */
+    var sum = 10 + 10;
+    console.log(sum);
+
+    //Substracting Numbers
+    var difference = 45 - 10;
+    console.log(difference);
+    //Multiplying Numbers
+    var product = 5 * 5;
+    console.log(product);
+    //Dividing Numbers
+    var quotient = 50 / 5;
+    console.log(quotient);
+    //Incrementing Numbers
+    var myVar = 87;
+    //Only change code below this line
+    //myVar = myVar + 1;
+    myVar++;
+    console.log(myVar++);
+    //Decrementing Numbers
+    var myVar = 87;
+    //Only change the code below this line
+    //myVar = myVar - 1;
+    myVar--;
+    console.log(myVar--);
+
+    //Decimal Numbers
+    var ourDecimal = 5.7;
+    //Only Change the Code below this line
+    var myDecimal = 0.009;
+    console.log(myDecimal);
+
+    //Multy Decimals
+    var product = 2.0 * 0.5;
+    console.log(product);
+
+    //Divide Decimals
+    var quotient = 50.50 / 2.5;
+    console.log(quotient);
+
+    //Finding a Remainder
+    //Only change code below this line
+
+    var remainder;
+    remainder = 11 % 3;
+
+
+    //Compound Assignment with Augmented Additior
+    var a = 3;
+    var b = 17;
+    var c = 12;
+
+    //Only modify code below this multiline
+    /*a = a + 12;*/
+    a += 12;
+    /* b = 9 + b;*/
+    b += 9
+    /*c = c + 7;*/
+    c += 7
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    //Compound Assignment with Augmented Subtraction 19:23min
+    var a = 11;
+    var b = 9;
+    var c = 3;
+    //Only Modify the code belwo this line
+    /*a = a - 6;*/
+    a -= 6;
+    /*b = b - 15;*/
+    b -= 15;
+    /*c = c - 1;*/
+    c -= 1;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    //Compound Assignment with Augmented Multiplication
+    var a = 5;
+    var b = 12;
+    var c = 4.6;
+    //Only Modify code below this line
+
+    /*a = a * 5;*/
+    a *= 5;
+    /*b = 3 * b;*/
+    b *= 3;
+    /*c = c * 10;*/
+    c *= 10;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+//Compound Assignment with Augmented Division
+var a = 48;
+var b = 108;
+var c = 33;
+//Only Modify code below this line
+/*a = a / 12;*/
+a /= 12;
+/*b = b / 4;*/
+b /= 4;
+/*c = c / 11;*/
+c /= 11;
+
+//Declaring String Variables
+//Example
+var firstName = "Alan";
+var lastName = "Turing";
+
+//Only Change the Code below this line
+var myFirstName = "Charef ";
+var myLastName = "Adel";
+console.log(myFirstName + myLastName);
+
+
+//Escaping Literal Quotes in Strings
+var myStr = "I am a \"double quoted\" string inside \"double quotes\" ";
+console.log(myStr);
+
+//Quoting Strings with Single Quotes
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+console.log(myStr);
+
+//Escape Sequences in Strings
+/***************
+CODE OUTPUT
+\' single quote
+\" double quote
+\\ backslash
+\n new line
+\r carriage return
+\t tab
+\b backspace
+\f form feed
+*****************/
+
+var myStr = "FirstLine\n\t\\SecondeLine\n\t\tThirdLine";
+console.log(myStr);
+
+//Concatenating Strings with Plus Operator
+
+//Example
+var ourStr = "I come first. " + "I come Second"
+
+//Only change code below this line
+var myStr = "This is the start. "+"This is the end.";
+console.log(myStr);
+
+//Concatenating Strings with Plus Equals Operator
+//Example
+var ourStr = "I come first. ";
+ourStr += "I come Second.";
+console.log(ourStr);
+//Only Change the Code below this line
+var myStr ="This is the first sentence. "
+myStr += "This is the second sentence."
+
+console.log(myStr);
+
+//Constructing Strings with Variables
+//Example
+/*var ourName = "freecodecamp";
+var ourStr = "Hello, our name is " + ourName + ", how are you?";
+console.log(ourStr);*/
+
+//Only change code below this line
+var myName = "Adel";
+var myStr = "My name is " + myName + " and I am well!, but how are you?";
+console.log(myStr);
+
+//Appending Variables to strings
+//Example
+var anAdjective = "awesome!";
+var ourStr = "freecodecamp is ";
+ourStr +=anAdjective;
+console.log(ourStr);
+
+//Only Change the code below this line
+var someAdjective ="worthwhile";
+var myStr ="Learning to code is ";
+myStr += someAdjective;
+console.log(myStr);
+
+//Find the Length of a String
+//example
+/*var firstNameLength = 0;
+var firstName = "Ada";
+
+firstNameLength = firstName.lenght;
+console.log(firstNameLength);
+//Setup
+var lastNameLength = 0;
+var lastNameLength = "Lovelace";
+
+//Only Change the code below this line
+
+lastNameLength = lastName.length;
+console.log(lastNameLenght);*/
+
+//Bracket Notation to Find Fist Character in String
+//Example
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+
+firstLetterOfFirstName = firstName[0];
+console.log(firstLetterOfFirstName);
+//Setup
+
+var firstLetterOfLasttName = "";
+var lastName = "Lovelace";
+
+//Only Change the code below this line
+firstLetterOfLastName = lastName[0];
+console.log(firstLetterOfLastName);
+
+//String Imuutability
+
+//Setup
+var myStr = "Jello World";
+
+//Only Change the code below this line
+
+myStr = "Hello World"; //Fix Me
+console.log(myStr);
+
+//Bracket Notation to Find Nth Character in String
+//Example
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+console.log(secondLetterOfFirstName);
+//Setup
+var lastName = "Lovelace";
+
+//Only Change the code below this line
+var thirdLetterOfLastName = lastName[2];
+console.log(thirdLetterOfLastName);
+
+//Bracket Notation to Find Last Character in String
+//Example
+var firstName = "Ada";
+var lastLetterOfFirstName = firstName[firstName.length - 1];
+console.log(lastLetterOfFirstName);
+//Setup
+var lastName = "Lovelace";
+
+//Only Change the code below this line
+var lastLetterOfLastName = lastName[lastName.length - 1];
+console.log(lastLetterOfLastName);
+
+//Bracket Notation to Find Nth-to-Last Character in a String
+//Example
+var firstName = "Ada";
+var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+console.log(thirdToLastLetterOfFirstName);
+
+//Setup
+var lastName = "Lovelace";
+
+//Only Change the code below this line
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+console.log(secondToLastLetterOfLastName);
+
+//Word Blanks
+//Example
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+//Your Code below this line
+var result = "";
+result += "The " + " " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb +" .";
+  //Your Code Above this line
+return result;
+}
+//Change the words here to test your function
+console.log(wordBlanks("dog", "big","ran","quickly"));
+console.log(wordBlanks("bike", "slow","flew","slowly"));
+
+//Store Multiple Value with Arrays
+//Example
+var ourArray = ["John", 23];/* This is the form of the Array */
+
+//Only Change the code below this line
+//Arrays alows you to store multiple data in one place
+var myArray = ["Quincy", 1];
+// Not Understood Man
+
+
+//Nested Arrays (Multidimentinal Arrays)
+//Example
+/*
+var Our Array = [["the universe", 42], ["everything", 101010]];
+
+//Only Change Code below this line
+
+var myArray = [["Bulls", 23], ["White Sox", 45]];
+*/
+
+//Access Array Data with Indexes
+//Example
+
+var ourArray = [50,60,70];
+var ourData = ourArray[0]; // equals 50
+console.log(ourData);
+//Setup
+var myArray = [50,60,70];
+var myData = ourArray[1];
+
+//Only Change the code below this line
+console.log(myData);
+
+//Modify Array Data With Indexes
+//Example
+var ourArray = [18,64,99];
+ourArray[1] = 45; //ourArray now equals [18,45,99].
+console.log(ourArray);
+//Setup
+
+var myArray = [18,64,99];
+myArray[0] = 5;
+//Only Change code below this line
+console.log(myArray);
+
+//Access Multi-Dimensional Arrays with Indexes
+//Setup
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+//Only Change the Code below this line
+var myData = myArray[2][2];
+console.log(myData);
+
+//Manipulate Arrays with push ()
+//Example
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.push(["happy", "joy"]);
+//OurArray now equals ["Stimpson", "J", "cat", ["happy", "Joy"]]
+
+//Setup
+var myArray = [["John", 23], ["cat", 2]];
+//Only change code below this line
+myArray.push(["dog", 3]);
+//Manish fahmha
+
+//Manipulate Arrays with pop()
+//Example
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop();
+
+//removedFromOurArray now equals 3, and ourArray now equals [1,2]
+console.log(ourArray);
+//Setup
+
+var myArray = [["John", 23],["cat", 2]]
+//Only change the code below this line
+var removedFromMyArray = myArray.pop();
+console.log(myArray);
+
+//Manipulate Arrays with shift()
+//Example
+var ourArray = ["Simpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+//removedFromOurArray now equals "Stimpson" and ourArray now equals ["J",["cat"]]
+console.log(ourArray);
+//Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+//Only change the code below this line
+var removedFromMyArray = myArray.shift();
+console.log(myArray);
+
+
+//Manipulate Arrays with unshift
+//Example
+var ourArray = ["Stimpson", "J", "cat"];
+
+ourArray.unshift("Happy");
+//now ourArray ["Happy", "J", "cat"]
+console.log(ourArray);
+
+//Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.unshift("happy");
+
+//Only Change the code below this line
+console.log(myArray);
+
+//Shoping List (Nested Arrays)
+var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["Juice", 2], ["eggs"]];
+myList.unshift("Hello World!");
+console.log(myList);
+
+//Write Reusable with functions
+//Example
+function ourReusableFunction() {
+  console.log("Heyya, World");
+}
+ourReusableFunction();
+
+//Only change the code below this line
+function reusableFunction() {
+  console.log("Hi World");
+}
+reusableFunction();
+
+//Passing Values to Functions With Arguments
+//Example
+function ourFunctionWithArgs(a, b){
+  console.log(a - b);
+}
+ourFunctionWithArgs(10, 5); // Outputs 5
+
+//Only Change the code below this line
+
+function myFunctionWithArgs(a, b){
+  console.log(a + b);
+}
+myFunctionWithArgs(10, 5); //Outputs 15
+
+
+//Global Scope and Functions
+//Declare your Variables here
+var myGlobal = 10;
+
+function fun1() {
+  //Assign 5 to oopsGlobal Here
+oopsGlobal = 5;
+}
+
+//Only change the code below this line
+function fun2() {
+var output = "";
+if (typeof myGlobal != "undefined"){
+  output += "myGlobal: " + myGlobal;
+}
+if (typeof oopsGlobal != "undefined") {
+  output += "oopsGlobal: " + oopsGlobal;
+}
+console.log(output);
+}
+fun1();
+fun2();
+
+//Local Scope and Functions
+
+function myLocalScope() {
+    var myVar = 5;
+  console.log(myVar);
+}
+myLocalScope();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
 
 
 
